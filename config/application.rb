@@ -28,6 +28,7 @@ module FfMorningMeetingChart
     config.api_only = true
 
     config.generators do |g|
+      g.active_record migration: false
       g.test_framework :rspec,
                        fixtures: true,
                        view_specs: false,
